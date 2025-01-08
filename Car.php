@@ -12,3 +12,7 @@ $car1->maxSpeed = 225;
 $car2 = new Car();
 $car2->brand = "BMW";
 $car2->maxSpeed = 275;
+
+
+var_dump($car1);
+var_dump($car2);

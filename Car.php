@@ -5,8 +5,10 @@ class Car
     public float $maxSpeed;
 }
 
-$car = new Car();
-$car->brand = 'Toyota';
-$car->maxSpeed = 225;
+$car1 = new Car();
+$car1->brand = 'Toyota';
+$car1->maxSpeed = 225;
 
-var_dump($car);
+$car2 = new Car();
+$car2->brand = "BMW";
+$car2->maxSpeed = 275;

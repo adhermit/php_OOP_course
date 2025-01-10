@@ -15,6 +15,8 @@ try {
     $ticket = new Ticket(3.4, 12);
 } catch (Exception $e) {
     $errormessage= $e->getMessage();
+} catch (TypeError $e) {
+    $errormessage= $e->getMessage();
 }
 
 ?>

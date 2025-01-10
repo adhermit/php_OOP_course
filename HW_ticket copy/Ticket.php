@@ -4,16 +4,7 @@ class Ticket
     private int $quantity;
     private float $unitPrice;
 
-    public function __construct(int $quantity, float $unitPrice)
-    {
-        if ($quantity) {
-            $this->setQuantity($quantity);
-        } else {
-            echo "Quantity is not valid";
-        }
 
-        $this->setUnitPrice($unitPrice);
-    }
 
     /**
      * Get the value of quantity
@@ -51,6 +42,16 @@ class Ticket
         return $this;
     }
 
+    public function __construct(int $quantity, float $unitPrice)
+    {
+        if ($quantity) {
+            $this->quantity = $quantity;
+        } else {
+            echo "Quantity is not valid";
+        }
+
+        $this->unitPrice = $unitPrice;
+    }
 
     public function getTotal(): float
     {

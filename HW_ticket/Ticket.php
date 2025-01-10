@@ -6,11 +6,7 @@ class Ticket
 
     public function __construct(int $quantity, float $unitPrice)
     {
-        if ($quantity) {
-            $this->setQuantity($quantity);
-        } else {
-            echo "Quantity is not valid";
-        }
+        $this->setQuantity($quantity);
 
         $this->setUnitPrice($unitPrice);
     }
@@ -26,9 +22,20 @@ class Ticket
     /**
      * Set the value of quantity
      */
+    //public function setQuantity(int $quantity): self
+    //{
+    // $this->quantity = $quantity;
+
+    //return $this;
+    //}
+
     public function setQuantity(int $quantity): self
     {
-        $this->quantity = $quantity;
+        if ($quantity > 0) {
+            $this->quantity = $quantity;
+        } else {
+            throw new Exception("Quantity is not valid");
+        }
 
         return $this;
     }

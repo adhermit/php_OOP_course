@@ -14,7 +14,7 @@ $errormessage = "";
 try {
     $ticket = new Ticket(3.4, 12);
 } catch (Exception $e) {
-    $errormessage-> $e->getMessage();
+    $errormessage= $e->getMessage();
 }
 
 ?>

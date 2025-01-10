@@ -51,9 +51,20 @@ class Ticket
     /**
      * Set the value of unitPrice
      */
+    //public function setUnitPrice(float $unitPrice): self
+    //{
+    //   $this->unitPrice = $unitPrice;
+
+    //     return $this;
+    //}
+
     public function setUnitPrice(float $unitPrice): self
     {
-        $this->unitPrice = $unitPrice;
+        if ($unitPrice > 0) {
+            $this->unitPrice = $unitPrice;
+        } else {
+            throw new Exception("Quantity is not valid");
+        }
 
         return $this;
     }

@@ -22,7 +22,7 @@ class Circle extends Shape{
 
     public function calculateArea(): float
     {
-        $area = pi() * $this->radius * $this->radius;
+        $area = round(pi(),2)* $this->radius * $this->radius;
         return $area;
     }
 }

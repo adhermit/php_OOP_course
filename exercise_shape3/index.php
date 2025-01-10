@@ -15,5 +15,5 @@ $circle1 = new Circle(10, "red");
 ?>
 <h1>Circle</h1>
 <h3>Radius: <?= $circle1->getRadius(); ?></h3>
-<h3>Area of circle is: <?= $circle1->calculateArea(pi(), 2); ?></h3>
+<h3>Area of circle is: <?= $circle1->calculateArea(); ?></h3>
 <p>The color of circle is <?= $circle1->getColor(); ?></p>

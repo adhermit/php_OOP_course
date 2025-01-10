@@ -14,9 +14,9 @@ $errormessage = "";
 try {
     $ticket = new Ticket(3.4, 12);
 } catch (Exception $e) {
-    $errormessage= $e->getMessage();
+    $errormessage = $e->getMessage();
 } catch (TypeError $e) {
-    $errormessage= "Type Error!";
+    $errormessage = "Type Error!";
 }
 
 ?>
@@ -30,12 +30,12 @@ try {
 </head>
 
 <body>
-    <?php if(isset($ticket)) : ?>
-    <h3>Quantity: <?= $ticket->getQuantity(); ?></h3>
-    <h3>Unit Price: <?= $ticket->getUnitPrice(); ?></h3>
-    <h3>Total Price: <?= $ticket->getTotal() ?> </h3>
+    <?php if (isset($ticket)) : ?>
+        <h3>Quantity: <?= $ticket->getQuantity(); ?></h3>
+        <h3>Unit Price: <?= $ticket->getUnitPrice(); ?></h3>
+        <h3>Total Price: <?= $ticket->getTotal() ?> </h3>
     <?php else : ?>
-    <h3><?= $errormessage?></h3>
+        <h3><?= $errormessage ?></h3>
     <?php endif; ?>
 </body>
 

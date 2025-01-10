@@ -1,5 +1,5 @@
 <?php
-class Shape{
+abstract class Shape{
     private string $color;
 
     public function __construct(string $color)
@@ -24,4 +24,6 @@ class Shape{
 
         return $this;
     }
+
+    public abstract function calculateArea(): float;
 }

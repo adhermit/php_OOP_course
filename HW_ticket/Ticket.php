@@ -54,6 +54,6 @@ class Ticket
 
     public function getTotal(): float
     {
-        return $this->quantity * $this->unitPrice;
+        return $this->getQuantity() * $this->getUnitPrice();
     }
 }

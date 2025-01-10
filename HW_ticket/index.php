@@ -16,7 +16,7 @@ try {
 } catch (Exception $e) {
     $errormessage= $e->getMessage();
 } catch (TypeError $e) {
-    $errormessage= $e->getMessage();
+    $errormessage= "Type Error!";
 }
 
 ?>

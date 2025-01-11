@@ -1,0 +1,29 @@
+<?php
+require_once "Book.php";
+
+class Manga extends Book{
+    private string $type;
+
+    public function __construct(string $title, float $price, float $vat, string $type){
+        $this->type = $type;
+        parent::__construct($title, $price, $vat);
+    }
+
+    /**
+     * Get the value of type
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * Set the value of type
+     */
+    public function setType(string $type): self
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+}

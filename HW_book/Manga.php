@@ -26,4 +26,9 @@ class Manga extends Book{
 
         return $this;
     }
+
+    public function displayDetails()
+    {
+        return "<h3>{$this->getType()}</h3>";
+    }
 }

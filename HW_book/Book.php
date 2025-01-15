@@ -69,4 +69,8 @@ class Book{
     public function getTotalWithVat(){
         return $this->price + $this->price * $this->vat / 100;
     }
+
+    public function displayDetails(){
+        return "Title: $this->title, Price: $this->price, VAT: $this->vat, Total: " . $this->getTotalWithVat();
+    }
  }

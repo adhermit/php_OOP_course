@@ -5,7 +5,7 @@ class Manga extends Book{
     private string $type;
 
     public function __construct(string $title, float $price, float $vat, string $type){
-        $this->type = $type;
+        $this->setType($type);
         parent::__construct($title, $price, $vat);
     }
 

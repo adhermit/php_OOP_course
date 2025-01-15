@@ -27,6 +27,7 @@ $manga1 = new Manga("One Piece", 9.99, 7, "Shonen");
     <h3><?= $manga1->getTitle() ?></h3>
     <p>Price: <?= $manga1->getPrice() ?></p>
     <p>VAT: <?= $manga1->getVat() ?></p>
+    <p>Type: <?= $manga1->getType() ?></p>
     <p>Total: <?= $manga1->getTotalWithVat() ?></p>
 </body>
 

@@ -5,9 +5,9 @@ class Book{
     private float $vat;
 
     public function __construct(string $title, float $price, float $vat){
-        $this->title = $title;
-        $this->price = $price;
-        $this->vat = $vat;
+        $this->setTitle($title);
+        $this->setPrice($price);
+        $this->setVat($vat);
     }
 
 

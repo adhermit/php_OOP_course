@@ -29,6 +29,6 @@ class Manga extends Book{
 
     public function displayDetails()
     {
-        return "<h3>{$this->getType()}</h3>";
+        return parent::displayDetails() . "<p>Type: {$this->getType()}</p>";
     }
 }

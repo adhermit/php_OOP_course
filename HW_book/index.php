@@ -18,17 +18,10 @@ $manga1 = new Manga("One Piece", 9.99, 7, "Shonen");
 
 <body>
     <h1>Books</h1>
-    <h3><?= $book1->getTitle() ?></h3>
-    <p>Price: <?= $book1->getPrice() ?></p>
-    <p>VAT: <?= $book1->getVat() ?></p>
-    <p>Total: <?= $book1->getTotalWithVat() ?></p>
+    <p><?= $book1->displayDetails() ?></p>
 
     <h1>Manga</h1>
-    <h3><?= $manga1->getTitle() ?></h3>
-    <p>Price: <?= $manga1->getPrice() ?></p>
-    <p>VAT: <?= $manga1->getVat() ?></p>
-    <p>Type: <?= $manga1->getType() ?></p>
-    <p>Total: <?= $manga1->getTotalWithVat() ?></p>
+    <p><?= $manga1->displayDetails() ?></p>
 </body>
 
 </html>

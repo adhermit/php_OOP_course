@@ -71,6 +71,6 @@ class Book{
     }
 
     public function displayDetails(){
-        return "Title: $this->title, Price: $this->price, VAT: $this->vat, Total: " . $this->getTotalWithVat();
+        return "Title: $this->title,\n Price: $this->price,\n ,VAT: $this->vat, \n Total: " . $this->getTotalWithVat();
     }
  }
